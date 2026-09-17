@@ -1,0 +1,24 @@
+[project]
+name = "SimpleVoice"
+version = "0.1.0"
+description = "A really simple api for doing speech-to-text and text-to-speech"
+readme = "README.md"
+authors = [
+    { name = "David Kelly", email = "davek032@outlook.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    "moonshine-voice>=0.1.5",
+    "python-multipart>=0.0.32",
+]
+
+[project.scripts]
+voice = "voice:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/voice"]
