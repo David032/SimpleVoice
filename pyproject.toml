@@ -1,6 +1,6 @@
 [project]
 name = "SimpleVoice"
-version = "0.1.0"
+version = "0.2.0"
 description = "A really simple api for doing speech-to-text and text-to-speech"
 readme = "README.md"
 authors = [
